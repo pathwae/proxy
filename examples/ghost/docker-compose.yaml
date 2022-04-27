@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  web:
+    image: ghost
+    environment:
+      url: http://ghost.test.localhost
+
+  http:
+    image: pathwae/pathwae
+    environment:
+      CONFIG: |
+        ghost.test.localhost:
+          to: http://web:2368
+    ports:
+      - 80:80
+      - 8080:8080
+

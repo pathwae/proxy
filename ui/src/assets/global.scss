@@ -1,0 +1,7 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "@/assets/colors.scss";
+.logo {
+  filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.5));
+}
+@import "../../node_modules/bootstrap/scss/bootstrap";

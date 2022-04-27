@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  ghost:
+    image: ghost
+    environment:
+      url: https://ghost.test.localhost
+
+  db:
+    image: rethinkdb
+
+  nginx1:
+    image: nginx:alpine
+
+  nginx2:
+    image: nginx:alpine
+    
+  proxy:
+    image: pathwae/pathwae
+    environment:
+      CONFIG: |
+        ghost.test.localhost:
+          to: http://ghost:2368
+          force_ssl: true
+        rdb.test.localhost:
+          to: http://db:8080
+        host1.test.localhost:
+          to: http://nginx1
+        host2.test.localhost:
+          to: http://nginx2
+    ports:
+      - 443:443
+      - 80:80
+      - 8080:8080

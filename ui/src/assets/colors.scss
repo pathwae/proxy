@@ -1,0 +1,111 @@
+/*
+This CSS contains a modified version of Bootstrap's CSS
+Bootstrap's License can be found here: https://github.com/twbs/bootstrap/blob/main/LICENSE
+
+This CSS contains the Nord color scheme made by Arctic Ice Studio & Sven Greb
+Nord's License can be found here: https://github.com/arcticicestudio/nord/blob/develop/LICENSE.md
+
+The modifications to Bootstrap's CSS were done by SaberTooth Studios Games
+The github repository containing the source code of this CSS can be found here: https://github.com/SaberTooth-Studios/NordTheme-Bootstrap/
+*/
+
+$white: #eceff4;
+$gray-100: #e5e9f0;
+$gray-200: #e5e9f0;
+$gray-300: #d8dee9;
+$gray-400: #d8dee9;
+$gray-500: #d8dee9;
+$gray-600: #4c566a;
+$gray-700: #3b4252;
+$gray-800: #2e3440;
+$gray-900: #2e3440;
+$black: #2e3440;
+$blue: #88c0d0;
+$indigo: #5e81ac;
+$purple: #b48ead;
+$pink: #b48ead;
+$red: #bf616a;
+$orange: #d08770;
+$yellow: #ebcb8b;
+$green: #a3be8c;
+$teal: #8fbcbb;
+$cyan: #81a1c1;
+$body-bg: $black;
+$body-color: $white;
+$enable-shadows: true;
+$enable-gradients: true;
+$modal-content-bg: $gray-700;
+$modal-header-border-color: $gray-700;
+$card-bg: $gray-700;
+$progress-bar-color: $gray-700;
+$progress-bg: $gray-700;
+$alert-bg-level: 4;
+$alert-color-level: -10;
+$alert-border-level: -10;
+$component-active-color: $black;
+$jumbotron-bg: $gray-700;
+$dropdown-bg: $gray-700;
+$dropdown-color: $white;
+$dropdown-link-hover-bg: $gray-600;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: darken($white, 5%);
+$breadcrumb-bg: $gray-700;
+$breadcrumb-divider-color: $gray-500;
+$breadcrumb-active-color: $blue;
+$list-group-hover-bg: $gray-700;
+$list-group-bg: $gray-700;
+$list-group-active-color: $gray-700;
+$list-group-disabled-color: $gray-500;
+$list-group-action-color: $gray-500;
+$list-group-action-active-color: $blue;
+$list-group-action-active-bg: $body-bg;
+$pagination-bg: $gray-700;
+$pagination-border-color: $gray-700;
+$pagination-hover-color: $blue;
+$pagination-hover-bg: $gray-600;
+$pagination-hover-border-color: $blue;
+$pagination-disabled-color: $blue;
+$pagination-disabled-bg: $gray-700;
+$pagination-disabled-border-color: $blue;
+$table-border-level: 0;
+$table-bg-level: 1;
+$input-bg: $gray-600;
+$input-disabled-bg: $gray-700;
+$input-color: $blue;
+$text-muted: #8c94a4;
+$input-placeholder-color: $text-muted;
+$custom-control-cursor: $blue;
+$nav-tabs-link-active-color: $black;
+$nav-tabs-link-active-bg: $blue;
+$light: $gray-700;
+$dark: #8c94a4;
+$enable-responsive-font-sizes: true;
+$enable-prefers-reduced-motion-media-query: false;
+$mark-bg: $white;
+$blockquote-small-color: $text-muted;
+$nav-link-disabled-color: $text-muted;
+$input-group-addon-bg: $gray-600;
+$input-group-addon-color: $blue;
+$btn-link-disabled-color: $text-muted;
+$input-border-color: $gray-600;
+$custom-control-indicator-border-color: $text-muted;
+$custom-control-label-color: $blue;
+$custom-control-label-disabled-color: $text-muted;
+$custom-select-indicator-color: $blue;
+$enable-hover-media-query: true;
+$navbar-dark-color: rgba($gray-600, 0.8);
+$navbar-dark-hover-color: $black;
+$navbar-dark-active-color: $black;
+$navbar-dark-disabled-color: rgba($gray-600, 0.8);
+$navbar-dark-toggler-border-color: null;
+$navbar-light-brand-hover-color: $white;
+$navbar-light-brand-color: $blue;
+$navbar-light-toggler-border-color: null;
+$navbar-light-disabled-color: $text-muted;
+$navbar-light-active-color: $blue;
+$navbar-light-hover-color: $blue;
+$navbar-light-color: $white;
+$navbar-dark-brand-hover-color: rgba($gray-600, 0.8);
+$close-color: $white;
+$close-text-shadow: null;
+$close-font-weight: $font-weight-bolder;
