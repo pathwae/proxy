@@ -26,7 +26,7 @@ services:
 
   # the pathwae method!
   proxy:
-    image: pathwae/pathwae
+    image: quay.io/pathwae/proxy
     environment:
       CONFIG: |
         blog.site.localhost:
@@ -51,7 +51,7 @@ services:
 
   # the pathwae method! Add "force_ssl" to "true"
   proxy:
-    image: pathwae/pathwae
+    image: quay.io/pathwae/proxy
     environment:
       CONFIG: |
         blog.site.localhost:
@@ -82,7 +82,7 @@ services:
 
   # the pathwae method! Add "force_ssl" to "true"
   proxy:
-    image: pathwae/pathwae
+    image: quay.io/pathwae/proxy
     volumes:
     - ./certs:/certs:ro,z
     environment:

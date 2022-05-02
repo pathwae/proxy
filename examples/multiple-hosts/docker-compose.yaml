@@ -16,7 +16,7 @@ services:
     image: nginx:alpine
     
   proxy:
-    image: pathwae/pathwae
+    image: quay.io/pathwae/proxy
     environment:
       CONFIG: |
         ghost.test.localhost:

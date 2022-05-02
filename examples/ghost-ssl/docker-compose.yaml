@@ -7,7 +7,7 @@ services:
       url: https://blog.test.localhost
 
   http:
-    image: pathwae/pathwae
+    image: quay.io/pathwae/proxy
     volumes:
       - ./certs:/certs:ro,z
     environment:

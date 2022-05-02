@@ -7,7 +7,7 @@ services:
       url: http://ghost.test.localhost
 
   http:
-    image: pathwae/pathwae
+    image: quay.io/pathwae/proxy
     environment:
       CONFIG: |
         ghost.test.localhost:
