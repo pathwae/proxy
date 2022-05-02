@@ -1,3 +1,5 @@
+[![Docker Repository on Quay](https://quay.io/repository/pathwae/proxy/status "Docker Repository on Quay")](https://quay.io/repository/pathwae/proxy)
+
 # Pathwae - universal reverse proxy for Containers
 
 Pathwae is a **universal** reverse proxy that works for Docker (and docker-compose) and Podman (and podman-compose). The configuration is sent as environment variable.
