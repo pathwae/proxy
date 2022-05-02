@@ -10,3 +10,8 @@ image:
 	$(CC) build -t $(CNT_IMAGE):$(VERSION) --build-arg VERSION=$(VERSION) -f docker/Dockerfile .
 	$(CC) tag $(CNT_IMAGE):$(VERSION) $(CNT_IMAGE):latest
 
+
+push:
+	$(CC) push $(CNT_IMAGE):$(VERSION)
+	$(CC) push $(CNT_IMAGE):latest
+

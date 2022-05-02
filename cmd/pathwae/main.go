@@ -36,6 +36,14 @@ func main() {
 	confFile := globalConfFile
 	if os.Getenv("TESTMODE") == "1" {
 		confFile = "/tmp/config.yaml"
+	} else {
+		// create the /global directory if it doesn't exist
+		if _, err := os.Stat("/global"); os.IsNotExist(err) {
+			err = os.Mkdir("/global", 0755)
+			if err != nil {
+				log.Fatal("Error creating /global directory", err)
+			}
+		}
 	}
 
 	// if CONFIG is provided, so write the content in the temporary directory
