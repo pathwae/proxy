@@ -1,6 +1,6 @@
 # BUILD Project with go image
 FROM docker.io/golang:1.18
-ARG VERSION
+ARG VERSION=0.0.1
 
 COPY . /go/src/pathwae
 WORKDIR /go/src/pathwae
@@ -25,3 +25,6 @@ COPY --from=1 /app/dist /web
 VOLUME /certs
 EXPOSE 80 443 8080
 CMD ["/pathwae"]
+LABEL maintainer="Patrice Ferlet <metal3d@gmail.com>" \
+    description="PathWae is a web application to manage your path" \
+    version="${VERSION}"
